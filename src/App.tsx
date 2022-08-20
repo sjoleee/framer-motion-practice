@@ -21,7 +21,11 @@ const Box = styled(motion.div)`
 function App() {
   return (
     <Wrapper>
-      <Box />
+      <Box
+        initial={{ scale: 0 }}
+        animate={{ scale: 1, rotateZ: 360 }}
+        transition={{ type: "spring", bounce: 0.5, duration: 1, delay: 0.5 }}
+      />
     </Wrapper>
   );
 }
