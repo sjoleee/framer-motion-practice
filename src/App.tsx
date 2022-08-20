@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div`
   background-color: black;
@@ -10,7 +11,7 @@ const Wrapper = styled.div`
   height: 100vh;
 `;
 
-const Box = styled.div`
+const Box = styled(motion.div)`
   background-color: white;
   width: 200px;
   height: 200px;
@@ -20,7 +21,7 @@ const Box = styled.div`
 function App() {
   return (
     <Wrapper>
-      <Box></Box>
+      <Box />
     </Wrapper>
   );
 }
